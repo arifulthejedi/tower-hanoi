@@ -1,26 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(./background-f27b5bc0.jpg);
+    background-image: url("./background-f27b5bc0.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
-
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f0f8ff;
+    margin-bottom: 10px;
+}
 .hanoi-body {
     min-height: 450px;
+    width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 20px;
     border-radius: 10px;
-    background-color: #000c
 }
 
 .tower {
@@ -29,7 +34,8 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    background-color: #000c;
 }
 
 .st1 {
@@ -37,7 +43,7 @@ body {
     margin: 2px;
     background-color: tomato;
     width: 100px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .st2 {
@@ -45,7 +51,7 @@ body {
     margin: 2px;
     background-color: orange;
     width: 130px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .st3 {
@@ -59,7 +65,7 @@ body {
 .trigger {
     position: relative;
     top: 20px;
-    background-color: red
+    background-color: red;
 }
 
 .reset {
@@ -71,11 +77,11 @@ body {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
-    transition: background-color .3s ease
+    transition: background-color .3s ease;
 }
 
 .reset:hover {
-    background-color: #0056b3
+    background-color: #0056b3;
 }
 
 .winner {
@@ -85,5 +91,5 @@ body {
     border-radius: 10px;
     position: fixed;
     top: 20px;
-    left: 100px
+    left: 100px;
 }
